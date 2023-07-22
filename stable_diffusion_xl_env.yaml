@@ -1,0 +1,31 @@
+channels:
+  - pytorch
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.9.17
+  - pip:
+      - pyarrow==3.0.0
+      - transformers==4.31.0
+      - scikit-learn==0.24.2
+      - datasets==1.18.4
+      - '--extra-index-url https://download.pytorch.org/whl/cu117'
+      - opencv-python==4.6.0.66
+      - numpy==1.24.1
+      - torchvision==0.15.2+cu117
+      - torchaudio==2.0.2+cu117
+      - diffusers==0.18.2
+      - torch==2.0.1+cu117
+      - azureml-core==1.39.0
+      - azureml-defaults==1.39.0
+      - azureml-mlflow==1.39.0
+      - azureml-telemetry==1.39.0
+      - azureml-inference-server-http~=0.4.1
+      - flask==1.0.3
+      - invisible-watermark==0.2.0
+      - accelerate==0.21.0 
+      - safetensors==0.3.1
+  - pip
+description: Environment for Stable Diffusion Inference
+docker_image: mcr.microsoft.com/azureml/openmpi4.1.0-cuda11.3-cudnn8-ubuntu20.04
+version: '1'
